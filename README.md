@@ -18,9 +18,9 @@ Painel.js
 	1.2.1 - Visor
 1.3 - Painel
 	1.3.1-entrada
-		1.3.1-numero
-	1.3.1-operacao
-	1.3.1-comando
+		1.3.1.1-numero
+	1.3.2-operacao
+	1.3.3-comando
 
 
 ----
