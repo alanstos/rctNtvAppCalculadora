@@ -1,9 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import Topo from './components/Topo';
-import Painel from './components/Painel';
-import Resultado from './components/Resultado';
+import { Topo, Painel, Resultado } from './components';
 
 const App = () => (
     <View>

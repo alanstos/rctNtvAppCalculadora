@@ -4,11 +4,11 @@ import {
   Text
 } from 'react-native';
 
-const Topo = props => (
+const Painel = props => (
 		<View>
 			<Text>Painel</Text>
 		</View>
 	);
 
 
-export default Topo;
+export { Painel }; //export { Painel: Painel};

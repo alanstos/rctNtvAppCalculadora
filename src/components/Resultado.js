@@ -4,11 +4,11 @@ import {
   Text
 } from 'react-native';
 
-const Topo = props => (
+const Resultado = props => (
 		<View>
-			<Text>Resultado</Text>
+			<Text>Resultado 1234</Text>
 		</View>
 	);
 
 
-export default Topo;
+export { Resultado };
