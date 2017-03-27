@@ -4,10 +4,10 @@ import {
   Text
 } from 'react-native';
 
+import Visor from './Visor';
+
 const Resultado = props => (
-		<View>
-			<Text>Resultado 1234</Text>
-		</View>
+		<Visor />
 	);
 
 
