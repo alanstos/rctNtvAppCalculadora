@@ -11,8 +11,8 @@ export default props => (
 		<View>
 			<Text>Entrada</Text>
 			<View style={ style.entrada }>
-				<Numero />
-				<Numero />
+				<Numero num={ props.num1 } />
+				<Numero num={ props.num2 } />
 			</View>
 		</View>
 	);
