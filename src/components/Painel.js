@@ -12,6 +12,8 @@ class Painel extends Component {
 		this.state = { num1:'1', num2:'2' };
 
 		this.calcular = this.calcular.bind(this);
+		this.onChangeNum1 = this.onChangeNum1.bind(this);
+		this.onChangeNum2 = this.onChangeNum2.bind(this);
 	}
 
 	calcular(){
@@ -22,10 +24,20 @@ class Painel extends Component {
 
 	}
 
+	onChangeNum1(num){
+		return this.setState( {num1: num} );
+	}
+
+
+	onChangeNum2(num){
+		return this.setState( {num2:num} );
+	}
+
 	render(){
 		return (
 			<View>
-				<Entrada num1={this.state.num1} num2={this.state.num2} />
+				<Entrada num1={this.state.num1} num2={this.state.num2} 
+					eventNum1={ this.onChangeNum1 } eventNum2={ this.onChangeNum2 } />
 				<Operacao />
 				<Comando acao={ this.calcular } />
 			</View>
