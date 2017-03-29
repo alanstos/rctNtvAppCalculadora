@@ -5,8 +5,10 @@ export default props => (
 		<View>
 			<Text>Visor resultado </Text>
 		      <TextInput
+		       	editable = {false}
 		        style={ style.input }
-
+		        placeholder='Resultado'
+		        value={ props.resultado }
 		      />			
 		</View>
 	);

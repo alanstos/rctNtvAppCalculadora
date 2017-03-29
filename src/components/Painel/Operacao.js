@@ -8,18 +8,18 @@ export default class Operacao extends Component {
 
 	constructor(props) {
 		super(props);
-		this.state = { operacao: '' };
 	}
 
 	render(){
 
 		return (
-			<Picker style={ styles.Picker }
-			  selectedValue={this.state.operacao}
-			  onValueChange={ (sel) => this.setState({operacao: sel})}
+			<Picker style={ styles.Picker } 
+				selectedValue={ this.props.valor }
+			  	onValueChange={ (sel) => this.props.evento(sel) }
 			>
 			  <Picker.Item label="Soma" value="soma" />
 			  <Picker.Item label="Subtração" value="subtracao" />
+			  <Picker.Item label="Multiplicação" value="multp" />
 			</Picker>
 		);
 	}

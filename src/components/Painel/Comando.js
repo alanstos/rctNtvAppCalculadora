@@ -12,5 +12,6 @@ const styles = StyleSheet.create({
 	botao : {
 		width: 20,
 		alignItems:'center',
+		height: 50,
 	}
 });
